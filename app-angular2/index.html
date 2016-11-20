@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>Angular 2 QuickStart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <!--Material Deisgn Lite-->
+  <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
+  <script src="/node_modules/material-design-lite/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-blue.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="systemjs.config.js"></script>
+  <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <my-app>
+      <!-- Simple MDL Progress Bar -->
+      <div id="p1" class="mdl-progress mdl-js-progress" style="height: 20px; margin: auto;"></div>
+      <!--<div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active" style="height: 20px; margin: auto;"></div>-->
+    </my-app>
+  </div>
+  <script>
+    document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(50);
+  });
+  </script>
+</body>
+
+</html>
