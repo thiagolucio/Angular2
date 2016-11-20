@@ -1,2 +1,2 @@
 # Angular2
-App em Angular 2 para Estudo e Desenvolvimento
+Angular 2 App for Develop and Study
