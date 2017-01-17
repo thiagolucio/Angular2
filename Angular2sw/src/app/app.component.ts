@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  Input,
+  transition,
+  style,
+  animate,
+  state
+} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +13,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']  
 })
 export class AppComponent {
-  title = 'Projeto Angular 2';
+  title = 'Titulo Aplicação';
 }

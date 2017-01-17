@@ -1,4 +1,8 @@
 md-toolbar {
-    background: #333;
-    color: #efefef;
+    flex: 1 1 auto;
+}
+
+.align-right {
+    text-align: right;
+    float: right
 }
